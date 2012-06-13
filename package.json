@@ -1,0 +1,18 @@
+{
+  "name": "scotch",
+  "version": "0.0.1",
+  "description": "Tape your frontend together",
+  "keywords": [],
+  "author": "Matt Mueller <mattmuelle@gmail.com>",
+  "dependencies": {
+    "browserify" : "1.x"
+  },
+  "devDependencies" : {
+    "stylus" : "*",
+    "hogan.js" : "*",
+    "underscore" : "*",
+    "consolidate" : "*"
+  },
+  "main": "index",
+  "engines": { "node": ">=0.4.7" }
+}
