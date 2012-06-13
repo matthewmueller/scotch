@@ -25,9 +25,9 @@ See `example/` for more information.
 Currently supports:
 
 * CSS
-* Stylus
-* Hogan.js
-* Coffeescript
+* stylus
+* hogan
+* coffeescript
 
 ## TODO
 
