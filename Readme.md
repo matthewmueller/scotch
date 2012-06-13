@@ -20,6 +20,15 @@ To include the css and javascript into your frontend:
 
 See `example/` for more information.
 
+## Support
+
+Currently supports:
+
+* CSS
+* Stylus
+* Hogan.js
+* Coffeescript
+
 ## TODO
 
 * better documentation
