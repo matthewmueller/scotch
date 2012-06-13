@@ -1,13 +1,34 @@
 
 # scotch
 
-  Tape your frontend together
+Extends browserify to tape your frontend together. Allow templates and stylesheets to be required in the same way you would require javascript and coffeescript files.
+
+## Installation
+
+    npm install scotch
+
+## Usage
+
+    require('./list.styl'); // Loads the css
+    var person = require('./person.jst');
+    person({ name : "Matt" }); // => Hogan compiled function
+
+To include the css and javascript into your frontend:
+
+    <link href="scotch.css" rel="stylesheet">
+    <script src="scotch.js" type="text/javascript"></script>
+
+See `example/` for more information.
+
+## TODO
+
+* tests
 
 ## License 
 
 (The MIT License)
 
-Copyright (c) 2011 Matt Mueller &lt;mattmuelle@gmail.com&gt;
+Copyright (c) 2012 Matt Mueller &lt;mattmuelle@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
