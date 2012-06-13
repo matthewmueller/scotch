@@ -22,6 +22,7 @@ See `example/` for more information.
 
 ## TODO
 
+* better documentation
 * tests
 
 ## License 
