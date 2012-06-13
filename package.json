@@ -5,7 +5,8 @@
   "keywords": [],
   "author": "Matt Mueller <mattmuelle@gmail.com>",
   "dependencies": {
-    "browserify" : "1.x"
+    "browserify" : "1.x",
+    "underscore" : "*"
   },
   "devDependencies" : {
     "stylus" : "*",
