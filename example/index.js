@@ -1,12 +1,20 @@
 var express = require('express'),
     cons = require('consolidate'),
-    scotch = require('../'),
+    scotch = require('../')(__dirname);
     app = express();
 
-app.engine('html', scotch(__dirname));
+app.set('views', __dirname);
+app.engine('html', function(path, options, fn) {
+  scotch.render(path, options, function(err, str) {
+    console.log(err);
+    console.log(str);
+  });
+});
+
+app.use(express['static'](__dirname));
 
 app.get('/', function(req, res) {
-  res.render('index.html');
+  res.render('views/index.html');
 });
 
 app.listen(3000);
