@@ -3,9 +3,7 @@ var express = require('express'),
     scotch = require('../'),
     app = express();
 
-app.engine('html', cons.hogan);
-
-app.use(scotch('./ui'));
+app.engine('html', scotch(__dirname));
 
 app.get('/', function(req, res) {
   res.render('index.html');
