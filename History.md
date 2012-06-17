@@ -1,3 +1,9 @@
+0.1.1 / 2012-06-17
+==================
+
+* added nib
+* now supports maps. ie: jquery-browserify => jquery
+
 0.1.0 / 2012-06-17
 ==================
 
