@@ -1,6 +1,6 @@
 {
   "name": "scotch",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Tape your frontend together",
   "keywords": [],
   "author": "Matt Mueller <mattmuelle@gmail.com>",
@@ -13,7 +13,6 @@
     "stylus" : "*",
     "hogan.js" : "*",
     "express" : "3.x",
-    "underscore" : "*",
     "consolidate" : "*"
   },
   "main": "index",

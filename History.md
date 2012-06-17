@@ -1,3 +1,13 @@
+0.1.0 / 2012-06-17
+==================
+
+* Refactored the entire library
+* No longer uses browserify, but uses what browserify uses
+* Allows absolute paths now
+* Only runs through requires once now
+* Smaller footprint
+* Registers original entry as basename for your convenience
+
 0.0.3 / 2012-06-13
 ==================
 
