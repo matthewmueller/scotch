@@ -1,4 +1,3 @@
-
 # scotch
 
 Extends browserify to tape your frontend together. Allow templates and stylesheets to be required in the same way you would require javascript and coffeescript files.
@@ -18,8 +17,6 @@ To include the css and javascript into your frontend:
     <link href="scotch.css" rel="stylesheet">
     <script src="scotch.js" type="text/javascript"></script>
 
-See `example/` for more information.
-
 ## Support
 
 Currently supports:
@@ -28,6 +25,7 @@ Currently supports:
 * stylus
 * hogan
 * coffeescript
+* JSON
 
 ## TODO
 
