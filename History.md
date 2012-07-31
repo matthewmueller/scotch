@@ -1,3 +1,12 @@
+
+0.1.2 / 2012-07-31
+==================
+
+* ignore requires that it cannot find
+* better support for locating node_modules
+* added graceful json string failure
+* added logging to stylus error
+
 0.1.1 / 2012-06-17
 ==================
 
