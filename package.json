@@ -7,7 +7,8 @@
   "dependencies": {
     "detective" : "*",
     "deputy" : "*",
-    "underscore" : "*"
+    "underscore" : "*",
+    "mkdirp" : "*"
   },
   "devDependencies" : {
     "stylus" : "*",

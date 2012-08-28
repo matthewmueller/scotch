@@ -1,6 +1,6 @@
 require('./test.css');
 console.log(require('../b/hello.mu'));
-// console.log(require('./blah.coffee'));
+console.log(require('./blah.coffee'));
 
 // var person = require('./person.json');
 // console.log(person);
