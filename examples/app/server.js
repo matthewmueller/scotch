@@ -7,7 +7,7 @@ var express = require('express'),
 
 var opts = {
   root : join(__dirname),
-  build : join(__dirname, 'build')
+  build : join(__dirname, 'build/scotch')
 };
 
 app.use(express['static'](join(__dirname, 'build')));

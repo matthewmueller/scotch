@@ -5,10 +5,10 @@ var list = module.exports = function() {
 /**
  * List style
  */
-// require('./list.styl');
-// alert(require('./helper.json'));
+require('./list.styl');
+// console.log(require('./helper.json'));
 /**
  * List template
  */
-// list.prototype.template = require('./list.mu');
+list.prototype.template = require('./list.mu');
 

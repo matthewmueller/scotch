@@ -1,7 +1,13 @@
+// Set up the hogan.js alias explicitly
+require.alias('hogan.js', require('/vendor/hogan.js'));
+
 require('./index.styl');
 
 var jquery = require('/vendor/jquery');
 
-var list = require('../../ui/list/list.js');
+var List = require('../../ui/list/list.js'),
+    list = new List();
 
-console.log(list);
+console.log(list.template({
+  planet : "venus"
+}));
