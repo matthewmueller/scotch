@@ -33,10 +33,11 @@ app.configure('production', function() {
  * Routing
  */
 
-var index = require('./routes/index');
+var index = require('./routes/index'),
+    signup = require('./routes/signup');
 
 app.get('/', index.index);
-
+app.get('/signup', signup.index);
 
 /**
  * Binding the server
