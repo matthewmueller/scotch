@@ -1,3 +1,7 @@
+/**
+ * Module dependencies
+ */
+
 var express = require('express'),
     scotch = require('../../'),
     cons = require('consolidate'),
@@ -5,25 +9,39 @@ var express = require('express'),
     port = process.argv[2] || 8080,
     app = express();
 
-var opts = {
-  root : join(__dirname),
-  build : join(__dirname, 'build')
-};
-
-app.use(express['static'](join(__dirname, 'build')));
-
-app.engine('html', scotch(cons.hogan, opts));
-app.set('view engine', 'html');
+/**
+ * Configuration
+ */
 
 app.configure(function() {
-  app.use(express['static'](__dirname));
+  app.set('view engine', 'html');
+  app.use(express['static'](join(__dirname, 'build')));
 });
 
-app.get('/', function(req, res) {
-  res.render('index/index', {
-    title : 'Welcome to scotch'
-  });
+app.configure('development', function() {
+  app.engine('html', scotch(cons.hogan, {
+    root : join(__dirname),
+    build : join(__dirname, 'build')
+  }));
 });
 
-app.listen(port);
-console.log('Listening on port', port);
+app.configure('production', function() {
+  app.engine('html', cons.hogan);
+});
+
+/**
+ * Routing
+ */
+
+var index = require('./routes/index');
+
+app.get('/', index.index);
+
+
+/**
+ * Binding the server
+ */
+
+app.listen(port, function() {
+  console.log('Listening on port', port);
+});
