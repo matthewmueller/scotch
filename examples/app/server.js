@@ -20,7 +20,9 @@ app.configure(function() {
 });
 
 app.get('/', function(req, res) {
-  res.render('index/index');
+  res.render('index/index', {
+    title : 'Welcome to scotch'
+  });
 });
 
 app.listen(port);
