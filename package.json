@@ -6,7 +6,7 @@
   "author": "Matt Mueller <mattmuelle@gmail.com>",
   "dependencies": {
     "detective" : "*",
-    "deputy" : "*",
+    "deputy2" : "*",
     "underscore" : "*",
     "mkdirp" : "*"
   },
