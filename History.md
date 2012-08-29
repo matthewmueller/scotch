@@ -1,3 +1,11 @@
+0.2.0 / 2012-08-29
+==================
+
+* Rebuilt entire library
+* Now outputs files to /build which can be picked up by static
+* "main" now gets instatiated by default (require('index.js'))
+* Added coffee-script support
+* Hogan now requires aliasing in order to set up dependencies (see examples/app/)
 
 0.1.2 / 2012-07-31
 ==================
