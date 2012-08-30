@@ -3,7 +3,7 @@
  */
 
 var express = require('express'),
-    scotch = require('../../'),
+    jay = require('../../lib/jay'),
     cons = require('consolidate'),
     join = require('path').join,
     port = process.argv[2] || 8080,
@@ -12,18 +12,16 @@ var express = require('express'),
 /**
  * Configuration
  */
-scotch.alias('underscore', '/vendor/underscore.js');
+jay.root(__dirname)
+   .alias('underscore', '/vendor/underscore.js');
 
 app.configure(function() {
   app.set('view engine', 'html');
   app.use(express['static'](join(__dirname, 'build')));
 });
-// app.engine('jade', require('jade'));
+
 app.configure('development', function() {
-  app.engine('html', scotch(cons.hogan, {
-    root : __dirname,
-    build : join(__dirname, 'build')
-  }));
+  app.engine('html', jay(cons.hogan));
 });
 
 app.configure('production', function() {
