@@ -12,6 +12,7 @@ var express = require('express'),
 /**
  * Configuration
  */
+
 jay.root(__dirname)
    .alias('underscore', '/vendor/underscore.js');
 

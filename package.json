@@ -8,7 +8,8 @@
     "detective" : "*",
     "deputy2" : "*",
     "underscore" : "*",
-    "mkdirp" : "*"
+    "mkdirp" : "*",
+    "batch" : "*"
   },
   "devDependencies" : {
     "stylus" : "*",
