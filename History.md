@@ -1,9 +1,13 @@
+0.2.2 / 2012-08-30
+==================
+
+* Removed log
 
 0.2.1 / 2012-08-29
 ==================
 
-  * updated, added aliasing
-  * building out the app example
+* updated, added aliasing
+* building out the app example
 
 0.2.0 / 2012-08-29
 ==================
